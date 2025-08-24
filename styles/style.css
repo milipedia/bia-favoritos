@@ -58,11 +58,13 @@ footer {
     background-color: #8fbc8f;
     color: #191970;
     padding: 80px 20px;
+    border-radius: 8px;
 }
 
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    border-radius: 8px;
 }
 
 .destaques {
@@ -130,8 +132,8 @@ footer {
     display: block;
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra suave */
-    border: 1px solid #98fb98; /* Borda verde pálido */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+    border: 1px solid #98fb98; 
 }
 
 .galeria img {
@@ -163,4 +165,31 @@ footer {
     .destaques div {
         margin-bottom: 20px;
     }
+}
+
+.biblioteca {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.biblioteca a {
+    display: block; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.biblioteca a:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.biblioteca img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
 }
